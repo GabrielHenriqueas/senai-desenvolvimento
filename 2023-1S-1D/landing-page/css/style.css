@@ -1,0 +1,107 @@
+    /* import da font */
+    @font-face {
+        font-family: BebasNeue-Regular;
+        src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: CourierPrime-Regular;
+        src: url(../assets/fonts/Courier_Prime/CourierPrime-Regular.ttf);
+    }
+
+    @font-face {
+        font-family: OpenSans-Regular;
+        src: url(../assets/fonts/Open_Sans/static/OpenSans/OpenSans-Regular.ttf);
+    }
+
+    /* reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* apenas para centralizar conteúdos */
+.layout-grid {
+    width: 100%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 3px solid green; */
+}
+
+header {
+    background-color: #F9003D;
+    height: 60px;
+}
+
+/* flexbox no cabeçalho */
+header .header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    /* border: 2px solid white; */
+}
+
+header nav a {
+    padding: 15px 25px;
+    border-radius: 5px;
+    /* border: 1px solid white; */
+    font-family: "BebasNeue-Regular";
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+/* ao passar do maouse */
+header nav a:hover {
+    background-color: white;
+    color: #F9003D;
+}
+
+main .banner {
+    width: 100%;
+    height: 740px;
+    color: white;
+
+    background-image: url(../assets/images/imagem-fundo-banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom ;
+}
+
+main .banner #bannerinfo {
+    width: 550px;
+    /* border:2px solid yellowgreen; */
+
+}
+
+main .banner-flex {
+    display: flex;
+    align-items: center;
+}
+
+main .banner #bannerinfo  h1 {
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    font-family: BebasNeue-Regular;
+    font-size: 96px;
+    border-bottom: 3px solid #ffaf00;
+
+}
+
+main .banner #bannerinfo  p {
+    margin-bottom: 40px;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: red;
+}
