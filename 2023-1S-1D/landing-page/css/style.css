@@ -21,6 +21,12 @@
         box-sizing: border-box;
     }
 
+    /* Desktp First */
+    /* esconde o ícone do hamburger */
+    header #menu-hamburger {
+        display: none;
+    }
+
     /* apenas para centralizar conteúdos */
     .layout-grid {
         width: 100%;
@@ -123,17 +129,17 @@
     .sobre .sobre-flex {
         display: flex;
         justify-content: space-between;
-        border: solid yellowgreen 2px;
+        /* border: solid yellowgreen 2px; */
     }
 
     .sobre .sobre-flex .sobrebox {
         width: 500px;
-        border: solid yellowgreen 2px;
+        /* border: solid yellowgreen 2px; */
     }
 
     .sobre .sobre-flex .participantes {
         width: 640px;
-        border: solid yellowgreen 2px;
+        /* border: solid yellowgreen 2px; */
     }
 
     .sobre .sobre-flex .sobrebox h2 {
@@ -141,7 +147,7 @@
         font-family: BebasNeue-Regular;
         font-size: 64px;
         color: red;
-        border: solid yellowgreen 2px;
+        /* border: solid yellowgreen 2px; */
     }
 
     .sobre .sobre-flex .participantes h3 {
@@ -149,7 +155,7 @@
         font-family: 'Courier New', Courier, monospace;
         font-weight: bold;
         font-size: 24px;
-        border: solid yellowgreen 2px;
+        /* border: solid yellowgreen 2px; */
     }
 
     .sobre .sobre-flex .participantes h4 {
@@ -157,11 +163,56 @@
         font-family: BebasNeue-Regular;
         font-size: 64px;
         color: #ffaf00;
-        border: solid yellowgreen 2px;
+        /* border: solid yellowgreen 2px; */
     }
 
     .sobre .sobre-flex .participantes P {
         font-size: 18PX;
         line-height: 24px;
         text-align: justify;
+    }
+
+    /* smartphone */
+    @media screen and (max-width: 767px) {
+        main {
+            display: none;
+        }
+
+        header nav {
+            position: fixed;
+            top: 60px;
+            left: 0;
+            width: 80vw;
+            max-width: 360px;
+            height: 100vh;
+
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            background-color: red;
+        }
+
+        header nav a {
+            width: 150px;
+            margin-bottom: 30px;
+            border-left: 2px solid white;
+            border-bottom: 2px solid white;
+            border-radius: 10px;
+        }
+
+        header nav a:hover {
+            background-color: white;
+            color: #F9003D;
+        }
+        
+        /* esconde o ícone de barras --> menu-hamburger */
+        header #menu-hamburger {
+            display: block;
+        }
+
+        header #menu-hambuerger:hover {
+            opacity: 80%;
+        }
+        
     }
