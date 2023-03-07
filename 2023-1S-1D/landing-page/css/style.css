@@ -22,86 +22,146 @@
     }
 
     /* apenas para centralizar conteúdos */
-.layout-grid {
-    width: 100%;
-    height: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    /* border: 3px solid green; */
-}
+    .layout-grid {
+        width: 100%;
+        height: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        /* border: 3px solid green; */
+    }
 
-header {
-    background-color: #F9003D;
-    height: 60px;
-}
+    body {
+        background-color: #080324;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 16px;
+    }
 
-/* flexbox no cabeçalho */
-header .header-flex {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
+    header {
+        background-color: #F9003D;
+        height: 60px;
+    }
 
-header nav {
-    display: flex;
-    justify-content: space-between;
-    width: 600px;
-    /* border: 2px solid white; */
-}
+    /* flexbox no cabeçalho */
+    header .header-flex {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
 
-header nav a {
-    padding: 15px 25px;
-    border-radius: 5px;
-    /* border: 1px solid white; */
-    font-family: "BebasNeue-Regular";
-    color: white;
-    text-decoration: none;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-/* ao passar do maouse */
-header nav a:hover {
-    background-color: white;
-    color: #F9003D;
-}
+    header nav {
+        display: flex;
+        justify-content: space-between;
+        width: 600px;
+        /* border: 2px solid white; */
+    }
 
-main .banner {
-    width: 100%;
-    height: 740px;
-    color: white;
+    header nav a {
+        padding: 15px 25px;
+        border-radius: 5px;
+        /* border: 1px solid white; */
+        font-family: "BebasNeue-Regular";
+        color: white;
+        text-decoration: none;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
 
-    background-image: url(../assets/images/imagem-fundo-banner.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: bottom ;
-}
+    /* ao passar do maouse */
+    header nav a:hover {
+        background-color: white;
+        color: #F9003D;
+    }
 
-main .banner #bannerinfo {
-    width: 550px;
-    /* border:2px solid yellowgreen; */
+    main .banner {
+        width: 100%;
+        height: 740px;
+        color: white;
 
-}
+        background-image: url(../assets/images/imagem-fundo-banner.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: bottom;
+    }
 
-main .banner-flex {
-    display: flex;
-    align-items: center;
-}
+    main .banner #bannerinfo {
+        width: 550px;
+        /* border:2px solid yellowgreen; */
 
-main .banner #bannerinfo  h1 {
-    margin-bottom: 20px;
-    padding-bottom: 30px;
-    font-family: BebasNeue-Regular;
-    font-size: 96px;
-    border-bottom: 3px solid #ffaf00;
+    }
 
-}
+    main .banner-flex {
+        display: flex;
+        align-items: center;
+    }
 
-main .banner #bannerinfo  p {
-    margin-bottom: 40px;
+    main .banner #bannerinfo h1 {
+        margin-bottom: 20px;
+        padding-bottom: 30px;
+        font-family: BebasNeue-Regular;
+        font-size: 96px;
+        border-bottom: 3px solid #ffaf00;
 
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 45px;
-    font-weight: bold;
-    text-transform: uppercase;
-    color: red;
-}
+    }
+
+    main .banner #bannerinfo p {
+        margin-bottom: 40px;
+
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 45px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: red;
+    }
+
+        /* sobre */
+    .sobre {
+        padding: 120px 0;
+    }
+
+
+    .sobre .sobre-flex {
+        display: flex;
+        justify-content: space-between;
+        border: solid yellowgreen 2px;
+    }
+
+    .sobre .sobre-flex .sobrebox {
+        width: 500px;
+        border: solid yellowgreen 2px;
+    }
+
+    .sobre .sobre-flex .participantes {
+        width: 640px;
+        border: solid yellowgreen 2px;
+    }
+
+    .sobre .sobre-flex .sobrebox h2 {
+        margin-bottom: 40px;
+        font-family: BebasNeue-Regular;
+        font-size: 64px;
+        color: red;
+        border: solid yellowgreen 2px;
+    }
+
+    .sobre .sobre-flex .participantes h3 {
+        margin-bottom: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        font-weight: bold;
+        font-size: 24px;
+        border: solid yellowgreen 2px;
+    }
+
+    .sobre .sobre-flex .participantes h4 {
+        margin-bottom: 20px;
+        font-family: BebasNeue-Regular;
+        font-size: 64px;
+        color: #ffaf00;
+        border: solid yellowgreen 2px;
+    }
+
+    .sobre .sobre-flex .participantes P {
+        font-size: 18PX;
+        line-height: 24px;
+        text-align: justify;
+    }
