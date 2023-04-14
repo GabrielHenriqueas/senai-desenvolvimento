@@ -12,7 +12,7 @@
     int mulherSim = 0;
     int homemNao = 0;
 
-for (int cont = 1 ; cont <= 3; cont++)
+for (int cont = 1 ; cont <= 10; cont++)
 {
     
     Console.WriteLine($"Qual é o seu gênero? H/M");

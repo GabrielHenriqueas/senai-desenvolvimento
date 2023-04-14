@@ -4,7 +4,7 @@ int num = 1;
 
 for (int cont = 1; cont <= 10; cont++)
 {
-    Console.WriteLine($"\r\nTabuada do {num}!\r\n");
+    Console.WriteLine($"\r\nTabuada do {num}! r\n\");
     
     for (int cont2 = 1; cont2 <= 10; cont2++)
     {

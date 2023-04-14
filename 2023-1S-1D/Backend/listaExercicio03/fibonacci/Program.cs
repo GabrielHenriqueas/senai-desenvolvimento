@@ -1,22 +1,12 @@
 ﻿//  Pesquise como funciona o algoritmo Fibonacci.
 //  Faça um programa que gere a série até que o valor seja maior que 500.
 
-int a = 1;
-int b = 2;
-int c = a += b;
+int n3 = 0, n2 = 1;
 
-a += b = c;
-
-Console.WriteLine($"{c}");
-
-
-// for(int cont = 1 ; cont <= 10 ; cont++)
-// {
-//     a += b = c;
-
-//     Console.WriteLine($"{c}");
-    
-//     c += b = a;
-//     c = b;
-    
-// }
+for (int n1 = 0; n1 <= 500;)
+{
+    n1 = n2 + n3;
+    Console.WriteLine(n1);
+    n3 = n2;
+    n2 = n1;
+}
