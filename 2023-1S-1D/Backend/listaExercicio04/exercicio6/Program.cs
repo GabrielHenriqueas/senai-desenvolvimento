@@ -20,5 +20,5 @@ if (nomes.Contains(busca))
 }
 else
 {
-    Console.WriteLine($"NAO ACHEI");
+    Console.WriteLine($"NAO ACHEI"); 
 }
