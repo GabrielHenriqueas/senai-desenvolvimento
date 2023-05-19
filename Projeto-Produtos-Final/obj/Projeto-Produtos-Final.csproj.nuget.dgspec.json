@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\42351028856\\Desktop\\Projeto-Produtos-Final\\Projeto-Produtos-Final.csproj": {}
+    "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Produtos-Final\\Projeto-Produtos-Final.csproj": {}
   },
   "projects": {
-    "C:\\Users\\42351028856\\Desktop\\Projeto-Produtos-Final\\Projeto-Produtos-Final.csproj": {
+    "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Produtos-Final\\Projeto-Produtos-Final.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\42351028856\\Desktop\\Projeto-Produtos-Final\\Projeto-Produtos-Final.csproj",
+        "projectUniqueName": "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Produtos-Final\\Projeto-Produtos-Final.csproj",
         "projectName": "Projeto-Produtos-Final",
-        "projectPath": "C:\\Users\\42351028856\\Desktop\\Projeto-Produtos-Final\\Projeto-Produtos-Final.csproj",
+        "projectPath": "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Produtos-Final\\Projeto-Produtos-Final.csproj",
         "packagesPath": "C:\\Users\\42351028856\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\42351028856\\Desktop\\Projeto-Produtos-Final\\obj\\",
+        "outputPath": "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Produtos-Final\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\42351028856\\AppData\\Roaming\\NuGet\\NuGet.Config",

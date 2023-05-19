@@ -65,8 +65,9 @@ namespace Projeto_Produtos_Final
             Produto produto = produtos.Find (x => x.Codigo == codigo);
             produtos.Remove(produto);
 
+            Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine($"PRODUTO EXCLUIDO COM ÉXITO!");
-            
+            Console.ResetColor();
         }
     }
 }
