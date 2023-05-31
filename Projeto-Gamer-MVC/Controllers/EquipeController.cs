@@ -19,10 +19,10 @@ namespace Projeto_Gamer_MVC.Controllers
         {
             _logger = logger;
         }
-        
+
         //intância do objeto da classe Context acessa o BD
         Context c = new Context();
-                        //               controller/action
+        //               controller/action
         [Route("Listar")]//http://localhost/Equipes/Listar
         public IActionResult Index()
         {
@@ -33,20 +33,51 @@ namespace Projeto_Gamer_MVC.Controllers
             //retorna a view de equipe
             return View();
         }
-
+        
+        [Route("Cadastrar")]
+        
         public IActionResult Cadastrar(IFormCollection form)
         {
             Equipe novaEquipe = new Equipe();
 
             novaEquipe.Nome = form["Nome"].ToString();
-            novaEquipe.Imagem = form["Imagem"].ToString();
+            //vem como string, o que precisamos é a imagem.
+            // novaEquipe.Imagem = form["Imagem"].ToString();
+
+            //início da lógica do upload da imagem
+            if (form.Files.Count > 0)
+            {
+                
+                var file = form.Files[0];
+
+                var folder = Path.Combine(Directory.GetCurrentDirectory(),"wwwroot/img/Equipes");
+
+                if (!Directory.Exists(folder))
+                {
+                    Directory.CreateDirectory(folder);
+                }
+
+                //gera o caminho completo até o caminho do arquivo(imagem - nome com extensão)
+                var path = Path.Combine(folder, file.FileName);
+
+                //using para que a instrução dentro dele seja encerrado assim que for executada
+                using (var stream = new FileStream(path, FileMode.Create))
+                {
+                    file.CopyTo(stream);
+                }
+
+                novaEquipe.Imagem = file.FileName;
+            }
+            else
+            {
+                novaEquipe.Imagem = "padrao.png";
+            }
+            //fim da lógica de upload
 
             c.Equipe.Add(novaEquipe);
             //c.Add(novaEquipe);
 
             c.SaveChanges();
-
-            ViewBag.Equipe = c.Equipe.ToList();
 
             return LocalRedirect("~/Equipe/Listar");
         }
