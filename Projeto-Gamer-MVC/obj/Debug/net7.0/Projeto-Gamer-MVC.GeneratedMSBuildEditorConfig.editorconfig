@@ -16,6 +16,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\42351028856\Desktop\senai-desenvolvimento\Projeto-Gamer-MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/42351028856/Desktop/senai-desenvolvimento/Projeto-Gamer-MVC/Views/Equipe/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/42351028856/Desktop/senai-desenvolvimento/Projeto-Gamer-MVC/Views/Equipe/index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXF1aXBlXGluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 

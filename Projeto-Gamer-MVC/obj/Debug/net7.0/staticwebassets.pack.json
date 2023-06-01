@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\Fagner-Png-800x445.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Fagner-Png-800x445.png"
+    },
+    {
+      "Id": "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\logo-bahia-4096.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\logo-bahia-4096.png"
+    },
+    {
+      "Id": "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\logo-do-corinthians-4096.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\logo-do-corinthians-4096.png"
+    },
+    {
       "Id": "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Gamer-MVC\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
