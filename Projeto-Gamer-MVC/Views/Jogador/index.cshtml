@@ -7,19 +7,20 @@
 <h1>Tela de Jogadores</h1>
 
 <form method="post" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
-    
+
     <label for="">Nome</label>
     <input type="text" name="Nome">
-    
-    <label for="">e-mail</label>
-    <input type="text" name="Email">
 
-    <label for="">Imagem</label>
-    <input type="file" name="Imagem">
+    <label for="">E-mail</label>
+    <input type="email" name="Email">
 
-    <select name="" id="">
+    <label for="">Senha</label>
+    <input type="password" name="Senha">
+
+    <label for="">Equipe</label>
+    <select name="IdEquipe" id="IdEquipe">
         <option value="0">Selecione uma opção</option>
-        
+
         @foreach (Equipe equipe in ViewBag.Equipe)
         {
             <option value="@equipe.IdEquipe">@equipe.Nome</option>
@@ -28,7 +29,7 @@
     </select>
 
     <button type="submit">Cadastrar</button>
-    
+
 
 </form>
 
@@ -36,8 +37,8 @@
     <thead>
         <th>Id</th>
         <th>Nome</th>
-        <th>Imagem</th>
-        <th>Ações</th>
+        <th>Email</th>
+        <th>Equipe</th>
     </thead>
 
     <tbody>
@@ -47,8 +48,14 @@
             <tr>
                 <td>@jogador.IdEquipe</td>
                 <td>@jogador.Nome</td>
+                <td>@jogador.Email</td>
                 <td><img src="/img/equipes/@jogador.Equipe.Imagem" alt="Imagem da Equipe @jogador.Nome" width="50px"></td>
-                
+                <td>
+                    <a asp-area="" asp-controller="Jogador" asp-action="Excluir" asp-route-id="@jogador.IdJogador">Excluir</a>
+                </td>
+                <td>
+                    <a asp-area="" asp-controller="Jogador" asp-action="Editar" asp-route-id="@jogador.IdJogador">Editar</a>
+                </td>
             </tr>
         }
 

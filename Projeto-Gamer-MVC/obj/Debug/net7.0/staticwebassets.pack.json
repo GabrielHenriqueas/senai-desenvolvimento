@@ -13,6 +13,18 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\AguaSanta.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\AguaSanta.png"
+    },
+    {
+      "Id": "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\Corinthians.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Corinthians.png"
+    },
+    {
+      "Id": "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\Flamengo.png",
+      "PackagePath": "staticwebassets\\img\\Equipes\\Flamengo.png"
+    },
+    {
       "Id": "C:\\Users\\42351028856\\Desktop\\senai-desenvolvimento\\Projeto-Gamer-MVC\\wwwroot\\img\\Equipes\\logo-bahia-4096.png",
       "PackagePath": "staticwebassets\\img\\Equipes\\logo-bahia-4096.png"
     },
