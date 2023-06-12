@@ -6,6 +6,12 @@
 
 <h1>Edição de Jogadores</h1>
 
+@if (ViewBag.UserName == null)
+{
+    <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="Index">Login</a>
+}
+else
+{
 <form method="post" action='@Url.Action("Atualizar")'>
     <input type="hidden" name="IdJogador" value="@ViewBag.Jogador.IdJogador">
 
@@ -36,4 +42,5 @@
 
     <button type="submit">Atualizar</button>
 
-</form>pe
+</form>
+}

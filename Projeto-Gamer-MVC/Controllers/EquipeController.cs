@@ -26,6 +26,7 @@ namespace Projeto_Gamer_MVC.Controllers
         [Route("Listar")]//http://localhost/Equipes/Listar
         public IActionResult Index()
         {
+            ViewBag.UserName = HttpContext.Session.GetString("UserName");
             //"mochila" que contém a lista das equipes
             //podemos usar essa "mochila" na view de equipe
             ViewBag.Equipe = c.Equipe.ToList();
